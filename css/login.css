@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.login {
+    width: 100%;
+    height: 100vh;
+    background: #f4f2f2;
+    display: flex;
+    align-items: center;
+}
+.login-content{
+    width: 700px;
+    height: 75%;
+    background: #fff;
+    margin: 0 auto;
+}
+.content-box {
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.content-box .title {
+    padding-top: 40px;
+    text-align: center;
+}
+.content-box .register {
+    padding-top: 0 !important;
+}
+.content-box .title .welcome {
+    margin-bottom: 5px;
+}
+.content-box .title .continue{ 
+    color: #878a99;
+    font-size: 14px;
+}
+form {
+    margin-top: 12px;
+    width: 500px;
+}
+form .user, .pass, .email {
+    margin-bottom: 1rem;
+}
+form label {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-size: 14px;
+
+}
+form label .red {
+    color: red;
+}
+form .input {
+    width: 100%;
+    padding: 0.325rem 0.9rem;
+    border: 1px solid #dde1ef;
+    border-radius: 3px;
+}
+form .input:focus{
+    outline: none;
+}
+form .remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form .remember label {
+    font-size: 14px;
+    cursor: pointer;
+}
+form .remember .forgot {
+    color: #878a99;
+    font-size: 13px;
+}
+form  .btn {
+    margin-top: 1rem;
+}
+form  .btn .btn-sign {
+    width: 100%;
+    padding: 10px;
+    background: #3258d3;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content-box .with {
+    width: 500px;
+}
+.content-box .with .with-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+.content-box .with .with-top .horizontal {
+    border-top: 1px dashed #3258d3;
+    width: 30%;
+}
+.content-box .with .with-top .signin-with {
+    font-size: 14px;
+}
+.content-box .with .with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.content-box .with .with-icon a {
+    text-decoration: none;
+}
+
+.content-box .with .with-icon i{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+.content-box .with .with-icon .fa-facebook-f {
+    background: #e1e7fc;
+    color: #3258d3;
+}
+.content-box .with .with-icon .fa-facebook-f:hover {
+    background: #3762ea;
+    color: #fff;
+}
+.content-box .with .with-icon .fa-google {
+    background: #ffe9e9;
+    color: #ff6c6c;
+}
+.content-box .with .with-icon .fa-google:hover {
+    background: #ff6c6c;
+    color: #fff;
+}
+.content-box .with .with-icon .fa-github {
+    background: #e9ebec;
+    color: #0f1114;
+}
+.content-box .with .with-icon .fa-github:hover {
+    color: #fff;
+    background: #0f1114;
+}
+.content-box .with .with-icon .fa-twitter {
+    background: #e4f3f6;
+    color: #4ab0c1;
+}
+.content-box .with .with-icon .fa-twitter:hover {
+    background: #4ab0c1;
+    color: #fff;
+}
+.content-box .with .with-account {
+    margin-top: 3rem;
+    text-align: center;
+}
+.content-box .with .with-account .account {
+    font-size: 14px;
+}
+.content-box .with .with-account .account .sign-up {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}

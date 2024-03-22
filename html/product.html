@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/dark-mode.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Steex - Admin & Dashboard</title>
+</head>
+<body>
+    <div class="middle">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+    </div>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="logo">
+                       <img src="/img/logo-light.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/overview.html" class="title2 active">
+                        <span class="icon"><i class="fa-solid fa-chart-pie"></i></span>
+                        <span class="title">Tổng quan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/product.html" class="title2">
+                        <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                        <span class="title">Quản lý sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/category.html" class="title2">
+                        <span class="icon"><i class="fa-solid fa-clipboard"></i></span>
+                        <span class="title">Quản lý thể loại</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="title2">
+                        <span class="icon"><i class="fa-solid fa-cart-plus"></i></span>
+                        <span class="title">Quản lý đơn hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="title2">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="title">Quản lý người dùng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="title2">
+                        <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                        <span class="title">Cài đặt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                        <span class="title">Đăng xuất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="topbar">
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+                <h3>PRODUCT MANAGEMENT</h3>
+            </div>
+            <div class="used">
+                <div class="selec-bar">
+                    <select class="select-bar" id="language-select">
+                        <option value="en">En</option>
+                        <option value="vi">Vi</option>
+                    </select>
+                </div>
+                <div class="used-left">
+                    <label class="theme">
+                        <input type="checkbox" class="input-cb" id="checkbox">
+                        <svg class="ic icon-sun" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
+                        <svg class="ic icon-moon" viewBox="0 0 24 24"><path d="m12.3 4.9c.4-.2.6-.7.5-1.1s-.6-.8-1.1-.8c-4.9.1-8.7 4.1-8.7 9 0 5 4 9 9 9 3.8 0 7.1-2.4 8.4-5.9.2-.4 0-.9-.4-1.2s-.9-.2-1.2.1c-1 .9-2.3 1.4-3.7 1.4-3.1 0-5.7-2.5-5.7-5.7 0-1.9 1.1-3.8 2.9-4.8zm2.8 12.5c.5 0 1 0 1.4-.1-1.2 1.1-2.8 1.7-4.5 1.7-3.9 0-7-3.1-7-7 0-2.5 1.4-4.8 3.5-6-.7 1.1-1 2.4-1 3.8-.1 4.2 3.4 7.6 7.6 7.6z"></path></svg>
+                      </label>
+                </div>
+                <div class="used-right">
+                    <label for="" data-en="Hi" data-vi="Chào">Hi: </label>
+                    <span class="welcome">Admin</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottombar">
+            <div class="product-item-1">
+                <h3 class="product-title">PRODUCTS</h3>
+                <span class="path">
+                    <a href="#" class="ecommerce">Ecommerce</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="#" class="product-a">Products</a>
+                </span>
+            </div>
+            <div class="filter">
+                <div class="filter-brg">
+                    <div class="filter-left">
+                        <select name="selName">
+                            <option value="">Select Category</option>
+                            <option value="1">Sports</option>
+                            <option value="2">Watches</option>
+                            <option value="3">Fashion</option>
+                            <option value="4">Headphones</option>
+                            <option value="5">Footwear</option>
+                            <option value="6">Luggage</option>
+                        </select>
+                    </div>
+                    <div class="filter-right">
+                        <div class="search">
+                            <div class="group">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                                  <g>
+                                    <path
+                                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                                <input class="input" type="search" placeholder="Search product" />
+                              </div>
+                        </div>
+                        <div class="refresh">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <div class="add">
+                            <a href="" class="add-sv"><i class="fa-solid fa-circle-plus"></i>Add Product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-mid">
+                <div class="table">
+                    <table class="content-table">
+                        <thead class="td">
+                            <tr>
+                                <th>Code</th>
+                                <th>Products</th>
+                                <th>Category</th>
+                                <th>Stock</th>
+                                <th>Price</th>
+                                <th>Orders</th>
+                                <th>Published</th>
+                                <th>Rating</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <td class="stt">1</td>
+                                <td class="student-code">Willage Volleyball Ball Size 4</td>
+                                <td class="name">Sports</td>
+                                <td class="sex">30</td>
+                                <td class="date">$99</td>
+                                <td class="mail">21</td>
+                                <td class="date">30 Mar, 2021</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.9
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">2</td>
+                                <td class="student-code">Fossil Gen 5E Smart Watch</td>
+                                <td class="name">Watches</td>
+                                <td class="sex">19</td>
+                                <td class="date">$120</td>
+                                <td class="mail">21</td>
+                                <td class="date">26 Mar, 2021</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.0
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">3</td>
+                                <td class="student-code">Full Sleeve Solid Men Sweatshirt/Hoody</td>
+                                <td class="name">Fashion</td>
+                                <td class="stt">20</td>
+                                <td class="date">$260</td>
+                                <td class="mail">20</td>
+                                <td class="date">21 Jun, 2021</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.5
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">4</td>
+                                <td class="student-code">Super Bass Blutooth wireless headphone</td>
+                                <td class="name">Headphones</td>
+                                <td class="sex">23</td>
+                                <td class="date">$180</td>
+                                <td class="mail">19</td>
+                                <td class="date">19 Apr, 2021</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.9
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">5</td>
+                                <td class="student-code">Flip-Flops and House Slippers</td>
+                                <td class="name">Footwear</td>
+                                <td class="sex">30</td>
+                                <td class="date">$150</td>
+                                <td class="mail">10</td>
+                                <td class="date">06 Jan, 2023</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.7
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">6</td>
+                                <td class="student-code">Like style travel black handbag</td>
+                                <td class="name">Luggage</td>
+                                <td class="sex">60</td>
+                                <td class="date">$160</td>
+                                <td class="mail">02</td>
+                                <td class="date">06 Jan, 2023</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.3
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">7</td>
+                                <td class="student-code">Flip-Flops and House Slippers</td>
+                                <td class="name">Footwear</td>
+                                <td class="sex">30</td>
+                                <td class="date">$150</td>
+                                <td class="mail">10</td>
+                                <td class="date">06 Jan, 2023</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.6
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">8</td>
+                                <td class="student-code">Full Sleeve Solid Men Sweatshirt/Hoody</td>
+                                <td class="name">Fashion</td>
+                                <td class="stt">20</td>
+                                <td class="date">$260</td>
+                                <td class="mail">20</td>
+                                <td class="date">21 Jun, 2021</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.5
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">9</td>
+                                <td class="student-code">Super Bass Blutooth wireless headphone</td>
+                                <td class="name">Headphones</td>
+                                <td class="sex">23</td>
+                                <td class="date">$180</td>
+                                <td class="mail">19</td>
+                                <td class="date">19 Apr, 2021</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.1
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">10</td>
+                                <td class="student-code">Like style travel black handbag</td>
+                                <td class="name">Luggage</td>
+                                <td class="sex">60</td>
+                                <td class="date">$160</td>
+                                <td class="mail">02</td>
+                                <td class="date">06 Jan, 2023</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.3
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="stt">10</td>
+                                <td class="student-code">Like style travel black handbag</td>
+                                <td class="name">Luggage</td>
+                                <td class="sex">60</td>
+                                <td class="date">$160</td>
+                                <td class="mail">02</td>
+                                <td class="date">06 Jan, 2023</td>
+                                <td class="status">
+                                    <span class="status-online">
+                                        <i class="fa-solid fa-star"></i>
+                                        4.3
+                                    </span>
+                                </td>
+                                <td class="feature">
+                                    <button class="btn edit" title="Chỉnh sửa"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn close" title="Xóa"><i class="far fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="bottom">
+                        <div class="total">
+                            <span class="total-page">Showing 10 of 10 Results</span>
+                        </div>
+                        <div class="pages">
+                            <a href="" class="pages-1">1</a>
+                            <a href="" class="pages-1">2</a>
+                            <a href="" class="pages-1">3</a>
+                            <a href="" class="pages-1">4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-item">
+                <div class="footer-item-row">
+                    <span class="item-row-left">2024 © Steex.</span>
+                    <span class="item-row-right">Design & Develop by Themesbrand</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html>

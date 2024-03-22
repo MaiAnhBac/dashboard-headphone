@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/overview.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/dark-mode.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Steex - Admin & Dashboard</title>
+</head>
+<body>
+    <div class="middle">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+    </div>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="logo">
+                       <img src="/img/logo-light.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/overview.html" class="title2 active">
+                        <span class="icon"><i class="fa-solid fa-chart-pie"></i></span>
+                        <span class="title">Tổng quan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/product.html" class="title2">
+                        <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                        <span class="title">Quản lý sản phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/category.html" class="title2">
+                        <span class="icon"><i class="fa-solid fa-clipboard"></i></span>
+                        <span class="title">Quản lý thể loại</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="title2">
+                        <span class="icon"><i class="fa-solid fa-cart-plus"></i></span>
+                        <span class="title">Quản lý đơn hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="title2">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="title">Quản lý người dùng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="title2">
+                        <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                        <span class="title">Cài đặt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/html/login.html">
+                        <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                        <span class="title">Đăng xuất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="topbar">
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+                <h3 data-en="OVERVIEW" data-vi="TỔNG QUAN">OVERVIEW</h3>
+            </div>
+            <div class="used">
+                <div class="selec-bar">
+                    <select class="select-bar" id="language-select">
+                        <option value="en">En</option>
+                        <option value="vi">Vi</option>
+                    </select>
+                </div>
+                <div class="used-left">
+                    <label class="theme">
+                        <input type="checkbox" class="input-cb" id="checkbox">
+                        <svg class="ic icon-sun" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
+                        <svg class="ic icon-moon" viewBox="0 0 24 24"><path d="m12.3 4.9c.4-.2.6-.7.5-1.1s-.6-.8-1.1-.8c-4.9.1-8.7 4.1-8.7 9 0 5 4 9 9 9 3.8 0 7.1-2.4 8.4-5.9.2-.4 0-.9-.4-1.2s-.9-.2-1.2.1c-1 .9-2.3 1.4-3.7 1.4-3.1 0-5.7-2.5-5.7-5.7 0-1.9 1.1-3.8 2.9-4.8zm2.8 12.5c.5 0 1 0 1.4-.1-1.2 1.1-2.8 1.7-4.5 1.7-3.9 0-7-3.1-7-7 0-2.5 1.4-4.8 3.5-6-.7 1.1-1 2.4-1 3.8-.1 4.2 3.4 7.6 7.6 7.6z"></path></svg>
+                      </label>
+                </div>
+                <div class="used-right">
+                    <label for="" data-en="Hi" data-vi="Chào">Hi: </label>
+                    <span class="welcome">Admin</span>
+                </div>
+            </div>
+        </div>
+        <div class="real">
+            <div class="real-top">
+                <div class="real-item-1">
+                    <h3 class="estate" data-en="REAL ESTATE" data-vi="ĐỊA ỐC">REAL ESTATE</h3>
+                    <span class="path">
+                        <a href="#" class="dashboard" data-en="Dashboards" data-vi="Trang tổng quan">Dashboards</a>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <a href="#" class="real-estate" data-en="Real-Estate" data-vi="Địa Ốc">Real-Estate</a>
+                    </span>
+                </div>
+                <div class="real-item-2">
+                    <div class="real-item-row">
+                        <div class="row-left">
+                            <div class="row-title">
+                                <span class="title-1" data-en="Properties for sale" data-vi="Tài sản để bán">
+                                    Properties for sale
+                                </span>
+                            </div>
+                            <div class="row-number">
+                                <span class="number-1">3,652 </span>
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <span class="number-up">06.19%</span>
+                            </div>
+                        </div>
+                        <div class="row-right">
+                            <div class="progress orange"></div>
+                        </div>
+                    </div>
+                    <div class="real-item-row">
+                        <div class="row-left">
+                            <div class="row-title">
+                                <span class="title-1" data-en="Properties for rent" data-vi="Bất động sản cho thuê">
+                                    Properties for rent
+                                </span>
+                            </div>
+                            <div class="row-number">
+                                <span class="number-1">1,524 </span>
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <span class="number-up">02.33%</span>
+                            </div>
+                        </div>
+                        <div class="row-right">
+                            <div class="progress light"></div>
+                        </div>
+                    </div>
+                    <div class="real-item-row">
+                        <div class="row-left">
+                            <div class="row-title">
+                                <span class="title-1" data-en=" Visitors" data-vi="Khách">
+                                    Visitors
+                                </span>
+                            </div>
+                            <div class="row-number">
+                                <span class="number-1">149k</span>
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <span class="number-up">12.33%</span>
+                            </div>
+                        </div>
+                        <div class="row-right">
+                            <div class="progress siena"></div>
+                        </div>
+                    </div>
+                    <div class="real-item-row">
+                        <div class="row-left">
+                            <div class="row-title">
+                                <span class="title-1" data-en="Properties for sale" data-vi="Tài sản để bán">
+                                    Properties for sale
+                                </span>
+                            </div>
+                            <div class="row-number">
+                                <span class="number-1">3,652 </span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                                <span class="number-down">06.19%</span>
+                            </div>
+                        </div>
+                        <div class="row-right">
+                            <div class="progress deep"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="real-mid">
+                <div class="real-mid-flex four">
+                    <div class="flex-top">
+                        <h4 class="flex-top-title" data-en="Properties Type" data-vi="Loại thuộc tính">Properties Type</h4>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="flex-bottom">
+                        <canvas id="myChart" width="387" height="387"></canvas>
+                    </div>
+                </div>
+                <div class="real-mid-flex six">
+                    <div class="six-top">
+                        <h4 class="six-top-title" data-en="Revenue Overview" data-vi="Tổng quan về doanh thu">Revenue Overview</h4>
+                        <input type="date" name="" id="" class="date">
+                    </div>
+                    <div class="six-bottom">
+                        <canvas id="bar-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="real-bottom">
+                <div class="real-bottom-flex">
+                    <div class="flex-top">
+                        <h4 class="flex-top-title" data-en="Skill Status" data-vi="Trạng thái kỹ năng">Skill Status</h4>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="flex-bottom">
+                        <canvas id="radar-chart"></canvas>
+                    </div>
+                </div>
+                <div class="real-bottom-flex">
+                    <div class="five-top">
+                        <h4 class="six-top-title" data-en="Order Status" data-vi="Tình trạng đặt hàng">Order Status</h4>
+                        <select class="select-today">
+                            <option value="1">Today</option>
+                            <option value="2">Tomorrow</option>
+                            <option value="3">Yesterday</option>
+                        </select>
+                    </div>
+                    <div class="five-bottom">
+                        <div class="status">
+                            <div class="status-title">
+                                <span class="title-h3" data-en="Packed" data-vi="Đóng gói">Packed</span>
+                                <span class="percent">89%</span>
+                            </div>
+                            <div class="status-horizontal">
+                                <div class="horizontal-item blue"></div>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <div class="status-title">
+                                <span class="title-h3" data-en="Dispatched" data-vi="Đã gửi đi">Dispatched</span>
+                                <span class="percent">56%</span>
+                            </div>
+                            <div class="status-horizontal">
+                                <div class="horizontal-item pink"></div>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <div class="status-title">
+                                <span class="title-h3" data-en="Reach Station" data-vi="Trạm tiếp cận">Reach Station</span>
+                                <span class="percent">94%</span>
+                            </div>
+                            <div class="status-horizontal">
+                                <div class="horizontal-item violet"></div>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <div class="status-title">
+                                <span class="title-h3" data-en="Out for delivery" data-vi="Ra ngoài để giao hàng">Out for delivery</span>
+                                <span class="percent">53%</span>
+                            </div>
+                            <div class="status-horizontal">
+                                <div class="horizontal-item yellow"></div>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <div class="status-title">
+                                <span class="title-h3" data-en="Delivered" data-vi="Đã giao hàng">Delivered</span>
+                                <span class="percent">77%</span>
+                            </div>
+                            <div class="status-horizontal">
+                                <div class="horizontal-item green"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-item">
+                <div class="footer-item-row">
+                    <span class="item-row-left">2024 © Steex.</span>
+                    <span class="item-row-right">Design & Develop by Themesbrand</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="/js/chart.js"></script>
+    <script src="/js/bar-chart.js"></script>
+    <script src="/js/radar-chart.js"></script>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html>
