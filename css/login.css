@@ -105,8 +105,10 @@ form  .btn .btn-sign {
     margin-bottom: 1.5rem;
 }
 .content-box .with .with-top .horizontal {
-    border-top: 1px dashed #3258d3;
-    width: 30%;
+    flex-grow: 1;
+    height: 1px;
+    /* background: #3258d3; */
+    border: 1px dashed #3258d3;
 }
 .content-box .with .with-top .signin-with {
     font-size: 14px;
