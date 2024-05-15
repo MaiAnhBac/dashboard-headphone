@@ -16,8 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await res.json()
             if (data.access_token) {
                 authorization(data.access_token);
+                alert("Đăng nhập thành công")
+                return;
             }
-            return
+            else {
+                alert("Đăng nhập thất bại");
+                return;
+            }
     }
         getByLogin(email, password)
         const authorization = async (token) => {
