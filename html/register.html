@@ -22,25 +22,29 @@
                     <div class="email">
                         <label for="">Email <span class="red">*</span></label>
                         <div class="form-input">
-                            <input type="text" name="" id="" class="input" placeholder="Email của bạn">
+                            <input type="text" class="input" placeholder="Email của bạn">
                         </div>
                     </div>
                     <div class="user">
                         <label for="">Username <span class="red">*</span></label>
                         <div class="form-input">
-                            <input type="text" name="" id="" class="input" placeholder="Username của bạn">
+                            <input type="text" class="input" placeholder="Username của bạn">
                         </div>
                     </div>
                     <div class="pass">
                         <label for="">Password <span class="red">*</span></label>
                         <div class="form-input">
-                            <input type="password" name="" id="" class="input" placeholder="Password của bạn">
+                            <input type="password" id="password" class="input" placeholder="Password của bạn">
+                            <i class="fa-regular fa-eye" onclick="changTypeConPass()"></i>
+                            <i class="fa-regular fa-eye-slash" onclick="changTypePass()"></i>
                         </div>
                     </div>
                     <div class="pass">
                         <label for="">Confirm password<span class="red">*</span></label>
                         <div class="form-input">
-                            <input type="password" name="" id="" class="input" placeholder="Confirm password  của bạn">
+                            <input type="password" id="confirm-password" class="input" placeholder="Confirm password  của bạn">
+                            <i class="fa-regular fa-eye" onclick="changTypeConPass()"></i>
+                            <i class="fa-regular fa-eye-slash" onclick="changTypePass()"></i>
                         </div>
                     </div>
                     <div class="btn">
@@ -68,6 +72,6 @@
             </div>
         </div>
     </div>
+    <script src="../js/hide.js"></script>
 </body>
-
 </html>

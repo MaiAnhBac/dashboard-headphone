@@ -61,15 +61,37 @@ form .input {
     width: 100%;
     border: 1px solid #dde1ef;
     border-radius: 3px;
-    padding: 10px 15px;
+    padding: 10px 50px 10px 15px;
 }
 form .input:focus{
     outline: none;
+}
+form .pass .form-input {
+    position: relative;
+}
+form .pass .form-input .fa-regular {
+    position: absolute;
+    top: 30%;
+    right: 3%;
+}
+form .pass input[type="password"] ~ .fa-eye {
+    display: none;
+}
+form .pass input[type="text"] ~ .fa-eye-slash {
+    display: none;
 }
 form .remember {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+form .remember .remember-left {
+    display: flex;
+    align-items: center;
+}
+form .remember .me {
+    margin-bottom: 0;
+    margin-left: 5px;
 }
 form .remember label {
     font-size: 14px;
@@ -78,6 +100,10 @@ form .remember label {
 form .remember .forgot {
     color: #878a99;
     font-size: 13px;
+    text-decoration: none;
+}
+form .remember .forgot:hover {
+    color: #3762ea;
 }
 form  .btn {
     margin-top: 1rem;
