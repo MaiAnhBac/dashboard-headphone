@@ -173,7 +173,7 @@ main
     width: calc(100% - 250px);
     left: 250px;
     min-height: 100%;
-    background: var(--white);
+    background: var(--brg-main);
     transition: 0.5s;
 }
 .main.active{
@@ -212,7 +212,7 @@ h3{
 }
 .bottombar {
     background: var(--brg-main);
-    height: calc(100vh - 60px);
+    padding-bottom: 60px;
 }
 .bottombar .product-item-1 {
     display: flex;
@@ -409,10 +409,10 @@ h3{
     }
    footer {
     position: absolute;
-    /* bottom: 0; */
+    bottom: 0;
+    width: 100%;
+    height: 60px;
     background: var(--brg-topbar);
-    right: 0;
-    left: 0;
     border-top: 1px solid var(--brg);
    }
    footer .footer-item-row {
